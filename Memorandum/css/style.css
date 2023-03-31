@@ -1,0 +1,51 @@
+body {
+    margin: 0 0;
+    background-color: #F0EFE9;
+}
+
+.list-box {
+    background-color: white;
+    margin: 40px auto 0;
+    width: 378px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow:0 0 5px #CFD0D5;
+}
+
+.list-box>.list-top {
+    width: 100%;
+    height: 60px;
+}
+
+.list-box>.list-top>h3 {
+    text-align: center;
+    line-height: 60px;
+    color: #666666;
+    font-weight: normal;
+}
+.list-box>.list-input>input {
+    display: block;
+    width: 70%;
+    height: 20px;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+.list-box>.list-input>input:focus {
+    border: 1px solid slateblue;
+    outline: none;
+}
+.remark {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+.remark-title>a{
+    color: #666;
+    text-decoration: none;
+}
