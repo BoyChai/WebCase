@@ -20,7 +20,7 @@ window.onload = function () {
     function getMemorandum() {
         $.ajax({
             type:"get",
-            url:"http://api.boychai.xyz/test/v1/memorandum/list",
+            url:"https://api.boychai.xyz/test/v1/memorandum/list",
             success: function (data) {
                 if (data.data.length>13) {
                     list_box.style.height = 400 + ((data.data.length-13)*20.67) +"px";
@@ -38,7 +38,7 @@ window.onload = function () {
         if (y.key == "Enter") {
             $.ajax({
                 type:"get",
-                url:"http://api.boychai.xyz/test/v1/memorandum/create",
+                url:"https://api.boychai.xyz/test/v1/memorandum/create",
                 data: {
                     title:" ",
                     text:list_input.value,
@@ -56,7 +56,7 @@ window.onload = function () {
             btns[i].onclick = function () {
                 $.ajax({
                     type:"DELETE",
-                    url:"http://api.boychai.xyz/test/v1/memorandum/del",
+                    url:"https://api.boychai.xyz/test/v1/memorandum/del",
                     data: JSON.stringify({'id':parseInt(btns[i].getAttribute("memorandumid"))}),
                     contentType: 'application/json',
                     success:function () {
