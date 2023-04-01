@@ -2,6 +2,24 @@ body {
     margin: 0 0;
     background-color: #F0EFE9;
 }
+ul,li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.close {
+    float: right;
+    font-size: 17px;
+    font-weight: 700;
+    color: #cccccc;
+    background: 0 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+.close:hover {
+    color: #666666;
+}
 
 .list-box {
     background-color: white;
@@ -36,16 +54,33 @@ body {
     border: 1px solid slateblue;
     outline: none;
 }
+.list-box>.list-body {
+    margin: 0 auto;
+    height: 270px;
+    width: 310px;
+
+}
+.list-box>.list-body>.list-group {
+    display: block;
+    list-style-type: disc;
+
+}
+.list-body>.list-group>.list-group-item {
+    color: #919191;
+    width: 300px;
+}
 .remark {
+    z-index: -1;
     width: 100%;
     height: 100px;
-    position: fixed;
-    bottom: 0;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     color: #666;
 }
 .remark-title>a{
     color: #666;
     text-decoration: none;
+}
+.remark-body {
+    margin-top: 15px;
 }
