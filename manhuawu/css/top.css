@@ -1,0 +1,33 @@
+.top-box>.top-img {
+    height: 120px;
+    background-image: url(../img/banner.jpg);
+}
+.top-box>.top-navigation {
+    height: 50px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.top-box>.top-navigation>ul{
+    display: flex;
+    height: 100px;
+}
+.top-box>.top-navigation>ul>li{
+    float: left;
+    width: calc((700px - 14px) / 7);
+    height: 50px;
+    border-right: 2px solid white;
+    background: linear-gradient(#ffd8d9,white);
+    line-height: 50px;
+}
+.top-box>.top-navigation>ul>li:last-child {
+    border-right: none;
+    width: calc(700px - ((700px - 14px) / 7) * 6);
+}
+.top-box>.top-navigation>ul>li>a{
+    font-weight: bold;
+}
+
+.top-box>.top-navigation>ul>li>a:hover{
+    color: blue;
+}

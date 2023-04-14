@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    background-color: #ffd8d9;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul,li{
+    padding:0;
+    margin: 0;
+    list-style:none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+a:hover {
+    position: relative;
+    right: -1px;
+    bottom: -1px;
+}
+.auto {
+    margin: 0 auto;
+    width: 700px;
+    background-color: #FFC0CB;
+}
+
+.body-box {
+    height: 910px;
+    padding-top: 5px;
+}
