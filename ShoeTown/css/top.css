@@ -1,0 +1,91 @@
+#box {
+    width: 100%;
+    background: url(../images/body_top.jpg) repeat-x top		/*背景图像水平重复顶端对齐*/
+}
+#top_header {
+    width: 960px;
+    height: 70px;
+    padding: 30px 10px;
+    background: url(../images/header_bg.png) no-repeat bottom;
+}
+#top_header_left{
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+}
+#top_header_left > a > img{
+    display: block;
+}
+#top_header_left > a > p{
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+#top_header_right>p {
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 14px;
+}
+#top_header_right > p > span{
+    color: #999;
+}
+
+#top_menubar {
+    width: 980px;
+    height: 60px;
+    background: url(../images/menubar.png) no-repeat;	/*背景图像无重复*/
+}
+#top_menubar_left > ul {
+    z-index:100;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+#top_menubar_left > ul >li {
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#top_menubar_left > ul > li > a {
+    display: block;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+#top_menubar_left > ul > li > a:hover {
+    color: #fff;
+    background: #2f2f2f;
+}
+#top_menubar_left > ul >li > ul {
+    display: none;
+}
+#top_menubar_right form {
+    margin: 0;
+    padding: 0;
+}
+#top_menubar_right {
+    float: right;
+    margin: 10px 30px 0;
+    width: 220px;
+    height: 34px;
+    background: url(../images/search_bg.png)
+}
+#top_menubar_right > form > input:first-child {
+    float: left;
+    line-height: 24px;
+    color: #999;
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#top_menubar_right > form > input:last-child {
+    float: right;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
