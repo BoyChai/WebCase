@@ -1,0 +1,73 @@
+#main {
+    /* margin-left: 242px; */
+    clear: both;
+	padding: 10px 0px; 		/*上、右、下、左的内边距依次为10px,20px,10px,20px*/
+	background: url(../images/main_bg.png) repeat-y		/*背景图像垂直重复*/
+}
+#main-left {
+    margin-left: 40px;
+}
+#sort {
+    width: 218px;
+    background-color: #F0F0F0;
+}
+#main-left h3 {
+    font-size: 14px;
+    font-weight: 700;			/*文字字重为700，相当于bold加粗*/
+    padding: 0 10px 0 35px;	/*上、右、下、左的内边距依次为0px,10px,0px,35px*/
+    margin: 0;
+    width: 185px;
+    height: 33px;
+    line-height: 33px;			/*行高33px*/
+    margin-bottom: 0;
+    background: url(../images/sidebar_header.png)  no-repeat; 	/*背景图像无重复*/
+    color: #2f2f2f;
+}
+
+#main-left .frame-list {
+    margin: 0;
+    padding: 0 0 10px;		/*上、右、下、左的内边距依次为0px,0px,10px,0px*/
+    list-style: none;			/*列表项无样式类型*/
+
+}
+#main-left .frame-list>li {
+    display: block;			/*块级元素*/
+    margin: 0;
+    padding: 5px 10px;		/*上、右、下、左的内边距依次为5px,10px,5px,10px*/
+    border-top: 1px solid #fff;	/*列表项上边框为1px白色实线*/
+    border-bottom: 1px solid #d3d3d3		/*列表项下边框为1px浅灰实线*/
+}
+
+#main-left .frame-list>li.first {
+    border-top: none			/*无上边框*/
+}
+#main-left .frame-list>li.last {
+    border-bottom: none		/*无下边框*/
+}
+#main-left .frame-list>li>a {
+    color: #666;
+    text-decoration: none		/*链接无修饰*/
+}
+#main-left .frame-list>li>a:hover {
+    color: #000;
+    text-decoration: none		/*链接无修饰*/
+}
+
+#ranking {
+    margin-top: 20px;
+    width: 218px;
+    background-color: #F0F0F0;
+}
+
+#ranking > div>ul>li>img {
+    float: left;
+}
+#ranking > div>ul>li>div>.shop_name {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+#ranking > div>ul>li>div>.shop_price {
+    color: #53D3E5;
+    margin-left: 90px;
+}

@@ -1,0 +1,520 @@
+/*---------页面全局样式---------*/
+body {					/*设置页面整体样式*/
+	margin: 0;
+	padding: 0;
+	color: #999;			/*设置默认文字颜色为浅灰色*/
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;			/*设置文字大小为12px*/
+	line-height: 1.4em	;	/*设置行高是字符的1.4倍*/
+	background-color: #665f5f;
+	background-repeat: repeat;
+	background-image: url(../images/body.jpg)
+}
+a, a:link, a:visited {			/*设置超链接及访问过链接的样式*/
+	color: #0299aa;
+	font-weight: normal;		/*字体正常粗细*/
+	text-decoration: none		/*链接无修饰*/
+}
+a:hover {					/*设置鼠标悬停链接的样式*/
+	text-decoration: underline;	/*加下划线*/
+}
+p {						/*段落样式*/
+	margin: 0 0 10px 0;		/*上、右、下、左的外边距依次为0px,0px,10px,0px*/
+	padding: 0; 
+}
+img {						/*设置图片样式*/
+	border: none;			/*图片无边框*/
+}
+h1, h2, h3, h4, h5, h6 {		/*设置h1~h6标题共同的样式*/
+	color: #333; 			/*设置文字颜色为深灰色*/
+	font-weight: normal; 		/*字体正常粗细*/
+}
+h1 {						/*设置h1标题独立的样式*/
+	font-size: 30px; 			/*设置文字大小为30px*/
+	margin: 0 0 30px; 		/*上、右、下、左的外边距依次为0px,0px,30px,0px*/
+	padding: 5px 0			/*上、右、下、左的内边距依次为5px,0px,5px,0px*/
+}
+h2 {						/*设置h2标题独立的样式*/
+	font-size: 26px;
+	margin: 0 0 25px;
+	padding: 5px 0
+}
+h3 {						/*设置h3标题独立的样式*/
+	font-size: 20px;
+	margin: 0 0 20px;
+	padding: 0;
+}
+h4 {						/*设置h4标题独立的样式*/
+	font-size: 16px;
+	margin: 0 0 15px;
+	padding: 0;
+}
+h5 {						/*设置h5标题独立的样式*/
+	font-size: 14px;
+	margin: 0 0 10px;
+	padding: 0;
+}
+h6 {						/*设置h6标题独立的样式*/
+	font-size: 12px;
+	margin: 0 0 5px;
+	padding: 0;
+}
+.cleaner {
+	clear: both				/*清除所有浮动*/
+}
+.h10 {
+	height: 10px			/*清除浮动后保留的空白区域的高度为10px*/
+}
+.h20 {
+	height: 20px			/*清除浮动后保留的空白区域的高度为20px*/
+}
+.h30 {
+	height: 30px			/*清除浮动后保留的空白区域的高度为30px*/
+}
+.h40 {
+	height: 40px			/*清除浮动后保留的空白区域的高度为40px*/
+}
+.h50 {
+	height: 50px			/*清除浮动后保留的空白区域的高度为50px*/
+}
+.float_l {
+	float: left				/*向左浮动*/
+}
+.float_r {
+	float: right 				/*向右浮动*/
+}
+#body_wrapper {				/*背景容器的样式*/
+	width: 100%;
+	background: url(../images/body_top.jpg) repeat-x top		/*背景图像水平重复顶端对齐*/
+}
+#wrapper {					/*整个页面容器wrapper的样式*/
+	width: 980px;
+	margin: 0 auto;			/*容器自动居中*/
+}
+/*---------页面顶部区域---------*/
+#header {				/*页面顶部的样式*/
+	width: 960px;
+	height: 70px;
+	padding: 30px 10px;
+	background: url(../images/header_bg.png) no-repeat bottom; 	/*背景图像无重复底端对齐*/
+}
+#site_title {			/*网站Logo容器的样式*/
+	float: left;			/*向左浮动*/
+	margin-top: 30px;
+}
+#site_title h1 {		/*网站Logo容器中h1标题的样式*/
+	margin: 0;
+	padding: 0
+}
+#site_title h1 a {		/*h1标题中超链接的样式*/
+	display: block;		/*块级元素*/
+	width: 300px;
+	height: 40px;
+	padding-top: 30px;
+	font-size: 12px;
+	letter-spacing: 4px;	/*字符间距为4px*/
+	color: #2f2f2f;
+	text-align: left;		/*文字左对齐*/
+	background: url(../images/logo.png) no-repeat top left	/*背景图像无重复顶端左对齐*/
+}
+#header_right {			/*网站Logo容器右侧区域的样式*/
+	float: right;				/*向右浮动*/
+	margin: 35px 240px 0 0;
+	color: #666;
+}
+#header_right a {	/*网站Logo容器右侧区域超链接的样式*/
+	color: #000;	/*文字颜色为黑色*/
+}
+/*---------页面菜单区域---------*/
+#menubar {				/*菜单容器的样式*/
+	width: 980px;
+	height: 60px;
+	background: url(../images/menubar.png) no-repeat;	/*背景图像无重复*/
+}
+.ddsmoothmenu{			/*顶层菜单容器的样式*/
+	float: left;			/*向左浮动*/
+}
+.ddsmoothmenu ul{		/*顶层菜单列表的样式*/
+	z-index:100;			/*置于页面最上端显示*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;			/*列表项无列表样式*/
+}
+.ddsmoothmenu ul li{		/*顶层菜单列表项的样式*/
+	position: relative;		/*相对定位*/
+	display: inline;		/*内联元素*/
+	float: left;			/*向左浮动*/
+}
+.ddsmoothmenu ul li a {		/*顶层菜单列表项链接的样式*/
+	display: block;			/*块级元素*/
+	padding: 0 30px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	color: #2f2f2f;	
+	text-decoration: none;			/*链接无修饰*/
+	outline: none;
+	text-align: center;		/*文字居中对齐*/
+}
+.ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover { 	/*顶层菜单列表项被选中链接和悬停链接的样式*/
+	color: #fff;			/*白色文字*/
+	background: #2f2f2f;	/*深灰色背景*/
+}
+.ddsmoothmenu ul li ul {		/*二级菜单列表的样式*/
+	position: absolute;			/*绝对定位*/
+	left: 0;
+	padding: 10px 0 0;
+	display: none; 
+	visibility: hidden;			/*可见性为隐藏*/
+	background: #313131;
+	border-bottom: 4px solid #000		/*下边框线为4px黑色实线*/
+}
+.ddsmoothmenu ul li ul li{		/*二级菜单列表项的样式*/
+	display: list-item;
+	float: none;
+}
+.ddsmoothmenu ul li ul li a{		/*二级菜单列表项链接的样式*/
+	font-weight: 400;			/*字体正常粗细*/
+	width: 130px; 					/*二级菜单的宽度*/
+	height: 30px;
+	padding: 0 30px;
+	line-height: 30px;
+	font-size: 11px;	
+	text-align: left;		/*文字左对齐*/
+	background: none;
+	color: #ccc;
+	border-bottom: 1px solid #222;
+	border-top: 1px solid #444;
+}
+.ddsmoothmenu ul li ul li a.selected, .ddsmoothmenu ul li ul li a:hover {	/*二级菜单列表项被选中链接和悬停链接的样式*/
+	color: #fff;
+	font-weight: 700;			/*字体加粗*/
+	background: #222;
+}
+.ddshadow{			/*设置菜单的阴影效果*/
+	position: absolute;		/*绝对定位*/
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+}
+#search {		/*菜单容器右侧搜索表单容器的样式*/
+	float: right;			/*向右浮动*/
+	margin: 10px 30px 0;
+	width: 220px;
+	height: 34px;
+	background: url(../images/search_bg.png)
+}
+#search form {	/*搜索表单的样式*/
+	margin: 0;
+	padding: 0;
+}
+#search .txt_field {	/*搜索表单中文本框的样式*/
+	float: left;		/*向左浮动*/
+	display: block;		/*块级元素*/
+	height: 22px;
+	line-height: 22px;
+	width: 170px;
+	color: #999;			/*灰色文字*/
+	font-size: 12px;
+	padding: 5px;
+	font-variant: normal;
+	border: none;		/*无边框*/
+	background: none;
+}
+#search .sub_btn {	/*搜索表单中提交按钮的样式*/
+	float: right;		/*向右浮动*/
+	display: block;		/*块级元素*/
+	color: #fff;		/*白色文字*/
+ 	height: 33px;
+	width: 40px;
+	font-size: 11px;
+	font-weight: 700;			/*字体加粗*/
+	line-height: 26px;
+	cursor: pointer;
+	border: none;		/*无边框*/
+	background: none;	
+}
+/*---------页面主体区域---------*/
+
+#main { 					/*主体内容区块的样式*/
+	clear: both;
+	padding: 10px 20px; 		/*上、右、下、左的内边距依次为10px,20px,10px,20px*/
+	background: url(../images/main_bg.png) repeat-y		/*背景图像垂直重复*/
+}
+/*---------左侧边栏区域---------*/
+#sidebar {					/*左侧边栏的样式*/
+	width: 220px			/*宽度220px*/
+}
+.sidebar_box {	/*左侧边栏中子栏目的样式，包括上面的商品分类和下边的畅销排行榜*/
+	position: relative;			/*相对定位*/
+	background: #f0f0f0;		/*浅灰色背景*/
+	margin-bottom: 36px;		/*设置容器下外边距为36px*/
+	border: 1px solid #dbdbdb	/*边框为1p灰色实线*/
+}
+.sidebar_box h3 {				/*畅销排行榜子栏目中h3标题的样式*/
+	font-size: 14px;
+	font-weight: 700;			/*文字字重为700，相当于bold加粗*/
+	padding: 0 10px 0 35px;	/*上、右、下、左的内边距依次为0px,10px,0px,35px*/
+	margin: 0;
+	width: 185px;
+	height: 33px;
+	line-height: 33px;			/*行高33px*/
+	margin-bottom: 0;
+	background: url(../images/sidebar_header.png)  no-repeat; 	/*背景图像无重复*/
+	color: #2f2f2f
+}
+#sidebar .sidebar_box .content {	/*左侧边栏中分类区域和畅销排行榜区域的样式*/
+	padding: 10px 10px 0;		/*上、右、下、左的内边距依次为10px,10px,0px,10px*/
+}
+#sidebar .sidebar_list {			/*设置列表区域无序列表的样式*/
+	margin: 0;
+	padding: 0 0 10px;		/*上、右、下、左的内边距依次为0px,0px,10px,0px*/
+	list-style: none;			/*列表项无样式类型*/
+}
+#sidebar .sidebar_list li {		/*设置无序列表中列表项的样式*/
+	display: block;			/*块级元素*/
+	margin: 0;
+	padding: 5px 10px;		/*上、右、下、左的内边距依次为5px,10px,5px,10px*/
+	border-top: 1px solid #fff;	/*列表项上边框为1px白色实线*/
+	border-bottom: 1px solid #d3d3d3		/*列表项下边框为1px浅灰实线*/
+}
+#sidebar .sidebar_list li.first {		/*设置无序列表中第一个列表项的样式*/
+	border-top: none			/*无上边框*/
+}
+#sidebar .sidebar_list li.last {		/*设置无序列表中最后一个列表项的样式*/
+	border-bottom: none		/*无下边框*/
+}
+#sidebar .sidebar_list li a {		/*设置无序列表中列表项超链接的样式*/
+	color: #666;
+	text-decoration: none		/*链接无修饰*/
+}
+#sidebar .sidebar_list li a:hover {	/*设置无序列表中列表项悬停链接的样式*/
+	color: #000;
+	text-decoration: none		/*链接无修饰*/
+}
+.bs_box {					/*畅销排行榜中商品区域的样式*/
+	clear: both;				/*清除所有浮动*/
+	margin-bottom: 20px		/*设置商品区域下外边距为20px*/
+}
+.bs_box img {				/*商品区域中图片的样式*/
+	float: left;				/*向左浮动*/
+	margin-right: 10px;		/*图片右外边距为10px*/
+	border: 4px solid #fff		/*边框为4px白色实线*/
+}
+.bs_box h4 {				/*商品区域中h4标题的样式*/
+	margin-bottom: 0
+}
+.bs_box h4 a {				/*商品区域中h4标题中超链接的样式*/
+	font-size: 11px;
+	color: #000;			/*链接颜色为黑色*/
+	font-weight: 700			/*文字字重为700，相当于bold加粗*/
+}
+.bs_box .price {				/*商品区域中商品价格文字的样式*/
+	font-size: 12px;
+	font-weight: 700;			/*文字字重为700，相当于bold加粗*/
+	color: #11bdd1			/*文字颜色为青色*/
+}
+/*---------右边主要内容区域---------*/
+#content {
+	width: 690px			/*设置主要内容区域宽度为690px*/
+}
+#slider-wrapper {	/*设置商品幻灯广告容器的样式*/
+	float: left;		/*向左浮动*/
+    width: 680px;	/*广告容器宽度为680px*/
+    height: 300px;	/*广告容器高度为300px*/
+	margin-right: 20px;
+	margin-bottom: 60px;
+}
+#slider {			/*设置商品幻灯广告内容的样式*/
+	position:relative;		/*相对定位*/
+    width: 620px;
+    height: 300px;
+	background:url(../images/loading.gif) no-repeat 50% 50%;	/*背景设置为默认的广告画面加载时的等待图标*/
+}
+#slider img {		/*设置广告图片的样式*/
+	position:absolute;		/*绝对定位*/
+	top:0px;	/*在容器的顶端*/
+	left:0px;	/*在容器的左端*/
+}
+#slider a {		/*设置广告链接的样式*/
+	border:0;		/*无边框*/
+	display:block;	/*块级元素*/
+}
+.nivo-controlNav {	/*设置广告右下角导航区的样式*/
+	position:absolute;		/*绝对定位*/
+	right: 10px;	/*距离容器右端10px*/
+	bottom: -30px;	/*在容器下方30px*/
+}
+.nivo-controlNav a {	/*设置右下角导航区链接的样式*/
+	display:block;	/*块级元素*/
+	width:14px;
+	height:18px;
+	background:url(../images/bullets.png) no-repeat;	/*背景图像无重复*/
+	text-indent:4px;	/*文字缩进4px*/
+	border:0;
+	margin-right:3px;		/*距离容器右端3px*/
+	float:left;		/*向左浮动*/
+}
+.nivo-controlNav a.active {		/*设置右下角导航区鼠标按下链接的样式*/
+	background-position:0 -18px;	/*背景图像向上移动18px，实现切换背景的效果*/
+}
+.nivo-directionNav a {		/*设置广告画面两端向左、向右箭头链接的样式*/
+	display:block;	/*块级元素*/
+	width:30px;
+	height:30px;
+	background:url(../images/arrows.png) no-repeat;	/*背景图像无重复*/
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {	/*向右箭头链接独立的样式*/
+	background-position:-30px 0;
+	right:15px;	/*距离容器右端15px*/
+}
+a.nivo-prevNav {	/*向左箭头链接独立的样式*/
+	left:15px;	/*距离容器左端15px*/
+}
+.product_box {				/*设置单个商品容器的样式*/
+	float: left;				/*向左浮动*/
+	width: 220px;
+	text-align: center;
+	margin: 0px 10px 30px 0px;	
+	padding-bottom: 20px;			/*容器下内边距20px*/
+	border-bottom: 1px dotted #ccc  	/*容器下边框为1px浅灰色点线*/
+}
+.product_box img {				/*商品容器中图片的样式*/
+	margin-bottom: 5px;			/*图片下外边距5px*/
+}
+.product_box h3 {			/*商品容器中h3标题的样式*/
+	font-size: 11px;
+	color: #000;
+	font-weight: 700;			/*字体加粗*/
+	margin-bottom: 10px;		/*标题下外边距10px*/
+}
+.product_box .product_price {	/*商品容器中商品价格的样式*/
+	color: #11bdd1;			/*文字颜色为青色*/
+	font-size: 14px;
+	font-weight: 700;			/*字体加粗*/
+	margin-bottom: 20px;		/*下外边距20px*/
+}
+.product_box .addtocart {		/*商品容器中加入购物车按钮的样式*/
+	float: left;				/*向左浮动*/
+	display: block;			/*块级元素*/
+}
+.product_box .detail {			/*商品容器中商品明细按钮的样式*/
+	float: right;				/*向右浮动*/
+	display: block;			/*块级元素*/
+}
+a.addtocart{				/*加入购物车按钮超链接的样式*/
+	display: inline-block;
+	width: 80px;
+	height: 21px;
+	line-height: 21px;			/*设置行高21px*/
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;		/*字体加粗*/
+	color: #333;
+	background: url(../images/addtocart.png)		/*加入购物车按钮的背景图片*/
+}
+a.detail{					/*商品明细按钮超链接的样式*/
+	display:inline-block;
+	width: 64px;
+	height: 20px;
+	line-height: 20px;	/*设置行高20px*/
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;		/*字体加粗*/
+	color: #333;
+	background: url(../images/detail.png)	/*商品明细按钮的背景图片*/
+}
+/*---------页面底部版权区域---------*/
+#footer {
+	width: 960px;
+	padding: 30px 10px;
+	color: #999;			/*文字颜色为灰色*/
+	text-align: center;			/*文字居中对齐*/
+	background: url(../images/footer.png) no-repeat top			/*背景图像无重复顶端对齐*/
+}
+#footer a {
+	color: #fff;		/*超链接文字颜色为白色*/
+}
+/*---------以上是首页使用的样式，其他页面使用的样式如下---------*/
+
+/*---------商品展示页面products.html、查看购物车页面shoppingcart.html和首页样式一样，没有新增的样式---------*/
+
+/*---------关于页面about.html的样式---------*/
+.tmo_list {
+	margin: 10px 0 10px 15px;
+	padding: 0;
+	list-style: none
+}
+.tmo_list li {
+	color:#999;
+	margin: 0 0 5px 0;
+	padding: 0 0 0 15px;
+	background: url(../images/list.png) no-repeat scroll 0 5px
+}
+.tmo_list li a {
+	color: #999;
+	font-weight: normal
+}
+.tmo_list li a:hover {
+	color: #333
+}
+blockquote {
+	border: 1px solid #039fb1;
+	border-left: 5px solid #000;
+	padding: 19px;
+	margin: 20px 0 0 0
+}
+
+/*---------常见问题页面faqs.html的样式---------*/
+.faqs p {
+	margin-bottom: 20px
+}
+.faqs h5 {
+	margin-bottom: 5px
+}
+
+/*---------明细页面productdetail.html、结算页面checkout.html的样式---------*/
+.content_half {
+	width: 320px
+}
+
+/*---------联系页面contact.html的样式---------*/
+#contact_form { padding: 0; width: 300px; margin-bottom: 40px }
+#contact_form form { margin: 0px; padding: 0px; }
+
+#contact_form form .input_field { 
+	font-family: Arial, Helvetica, sans-serif;
+	width: 270px; 
+	padding: 5px; 
+	color: #808b98;
+	background: #fff;
+	border: 1px solid #dedede; 
+}
+
+#contact_form form label { display: block; width: 100px; margin-right: 12px; font-size: 11px }
+
+#contact_form form textarea { 
+	font-family: Arial, Helvetica, sans-serif;
+	width: 270px; 
+	height: 200px; 
+	padding: 5px; 
+	color: #808b98;
+	background: #fff; 
+	border: 1px solid #dedede; 
+}
+
+#contact_form form .submit_btn { 
+	display: block; 
+	padding: 5px 12px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-weight: bold;
+	background-color: #000; 
+	border: 1px solid #fff; 
+	color: #fff; 
+	font-size:11px; 
+	cursor: pointer;
+}
