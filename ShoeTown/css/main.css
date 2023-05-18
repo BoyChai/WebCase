@@ -5,7 +5,7 @@
 	background: url(../images/main_bg.png) repeat-y		/*背景图像垂直重复*/
 }
 #main-left {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 #sort {
     width: 218px;
@@ -70,4 +70,45 @@
 #ranking > div>ul>li>div>.shop_price {
     color: #53D3E5;
     margin-left: 90px;
+}
+
+#right_body {
+    width: 94%;
+    /*左侧的宽度为238ox*/
+    /*margin-left: 238px;*/
+    margin-left: 258px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+#right_body p {
+    color: #999999;
+}
+
+#right_body_list {
+    margin: 10px 0 10px 15px;
+    padding: 0;
+    list-style: none
+}
+#right_body_list li {
+    color:#999;
+    margin: 0 0 5px 0;
+    padding: 0 0 0 15px;
+    background: url(../images/list.png) no-repeat scroll 0 5px;
+}
+#right_body_list li a {
+    color: #999;
+    font-weight: normal;
+}
+#right_body_list li a:hover {
+    color: #333;
+}
+
+blockquote {
+    border: 1px solid #039fb1;
+    border-left: 5px solid #000;
+    padding: 19px;
+    margin: 20px 0 0 0;
+    color: #999999;
+    font-size: 12px;
 }
