@@ -78,6 +78,7 @@ window.onload = function () {
             html += memorandumData[i].Text
             html += "<button memorandumid='"+memorandumData[i].ID+"' type='button' class='close'>×</button>"
             html += "</li>"
+            html += "<p></p>"
         }
         html += "</ul>"
         list_body.innerHTML = html
