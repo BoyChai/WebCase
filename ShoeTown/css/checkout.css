@@ -1,0 +1,32 @@
+#right_body {
+    float: left;
+    margin-left: 30px;
+    width: 429px;
+}
+#checkout_h1 {
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    color: #333;
+    font-width: normal;
+}
+#checkout_info li {
+    float: left;
+}
+
+#checkout_h4{
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4em;
+}
+.pay-image {
+    margin-top: 10px;
+}
+.pay-font1 {
+    padding-top: 0px;
+    padding-right: 120px;
+    width: 400px;
+}
+.pay-font2{
+    margin-right: 10px;
+    color: #0AE5E5;
+}

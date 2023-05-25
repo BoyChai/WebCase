@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>关于</title>
+    <title>结算</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/ddsmoothmenu.js"></script>
 
@@ -51,9 +51,9 @@
                             <li><a href="#">购买心得</a></li>
                         </ul>
                     </li>
-                    <li class="top_active"><a href="./about.html">关于</a></li>
+                    <li><a href="./about.html">关于</a></li>
                     <li><a href="#">常见问题</a></li>
-                    <li><a href="./checkout.html">结算</a></li>
+                    <li class="top_active"><a href="./checkout.html">结算</a></li>
                     <li><a href="#">联系</a></li>
                 </ul>
             </div>
@@ -128,31 +128,55 @@
         <!-- 右侧内容 -->
         <div id="main-right" style="width: 742px; height: 1000px;" >
             <div id="right_body">
-                <h1>关于鞋城</h1>
-                <h3>公司简介</h3>
-                <p>
-                    网络鞋城是中国愿大的鞋类专营网上购物商城，由国内著名的鞋业生产开发机构共同投资成立。在售鞋类将近上百种，注形用户遭及全四32个省、市、自治区和直辖市，每天有上万人在鞋城浏览购物。鞋城先借优质的产品和良好的服务，赢得了众多的荣昔。
-                    <br>
-                    鞋城的经营理念如下：
-                </p>
-                <ul id="right_body_list">
-                    <li>打造互联网时尚品牌</li>
-                    <li>提供最好的用户体验</li>
-                    <li>坚持诚信为本的经营理念</li>
-                    <li>注重团队利益</li>
-                    <li>鼓励创新</li>
-                </ul>
-                <h3>经营模式</h3>
-                <p>
-                    互联网提供了可以无限伸展的展示空间，可以容纳无限的商品及内容。在网络鞋城，消费者无论是购物还是查询，都不受时间和地域的任何限制。在消费者享受“鼠标轻轻一点，精品尽在眼前”的背后，是网络鞋城耗时5年修建的庞大的物流体系，全国库房面积达到5万平方米，提供货到付款服务的城市超过350个，并为联营商户开通货到付款服务。
-                </p>
+                <h1 id="checkout_h1">结算</h1>
+                <!--账单信息-->
+                <div>
+                    <h4>账单信息</h4>
+                    <div class="fl">
+                        <form action="">
+                            <p>收件人：</p><input type="text">
+                            <p>地址：</p><input type="text">
+                            <p>邮编：</p><input type="text">
+                        </form>
+                    </div>
+                    <div class="fr">
+                        <form action="">
+                            <p>电子邮件：</p><input type="text">
+                            <p>联系电话：</p><input type="text">
+                        </form>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
 
-                <blockquote>
-                    网络鞋城一直致力于在企业创造利润、对股东承担法律责任的同时，还承担对员工、消费者、社区和环境的责任。企业的社会责任要求企业必须超越把利润作为唯一目标的传统理念，强调要在生产过程中对人的价值的关注，强调对消费者、对环境、对社会的贡献，为此我们开展一系列公益活动，回报社会。
-                </blockquote>
+                <!--购物车-->
+                <div>
+                    <h4 class="checkout_h4">购物车</h4>
+                    <div>总金额：<span style="font-weight: bold;">￥866</span></div>
+                    <div><input type="checkbox" name="" id="" style="color:#999;"> 我接受商城<span style="color: #0AE5E5">服务条款</span></div>
+                    <div style="border: 1px solid black; width: 150%">
+                        <div>
+                            <img class="pay-image" src="images/webbank.gif">
+                            <div class="fr">
+                                <p class="pay-font1">用户可以通过自己所拥有的借记卡、信用卡的银行，申请开通网上银行，进行网上支付。</p>
+                                <a href="#" class="fr pay-font2" style="margin-top: -30px;">网银支付</a>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <img style="margin-top: 35px" class="pay-image" src="images/recive.gif">
+                            <div class="fr">
+                                <p class="pay-font1">由快递公司代收买家货款，货先送到客户手上，客户验货之后再客户把钱给送货员，之后货款再转到卖家账户里去。货到付款可以开箱验货，先查看货物描述与购买的货物有无差别，检验货物真实性，质量情况，还有运送损伤等情况之后，根据情况再签单，如果与事实不符，可以拒签，要求退货，并附上理由。</p>
+                                <a href="#" class="fr pay-font2" style="margin-top: -60px;">货到付款</a>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
+
 
 </div>
 </body>
