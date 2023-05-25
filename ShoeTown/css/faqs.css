@@ -1,0 +1,20 @@
+#main-right {
+    color: #999999;
+}
+#main-right>h1 {
+    font-weight: normal;
+    color: #333;
+    font-size: 22px;
+}
+#main-right>h4 {
+    font-weight: normal;
+    color: #333;
+    font-size: 16px;
+
+}
+#main-right>p {
+    font-size: 13px;
+}
+#main-right span {
+    color: #0AE5E5;
+}
