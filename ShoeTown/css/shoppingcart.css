@@ -1,0 +1,9 @@
+table {
+    color: #999999;
+    font-size: 13px;
+}
+a, a:link, a:visited{
+    color: #0299aa;
+    font-weight: normal;
+    text-decoration: none;
+}
