@@ -1,3 +1,6 @@
+h1{
+    font-weight: normal;
+}
 p {
     color: #999999;
     font-size: 14px;
@@ -24,5 +27,4 @@ span {
 
 .shop_item > h2{
     font-weight: normal;
-
 }

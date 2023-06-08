@@ -1,0 +1,44 @@
+#slider-wrapper {	/*设置商品幻灯广告容器的样式*/
+    float: left;		/*向左浮动*/
+    width: 680px;	/*广告容器宽度为680px*/
+    height: 300px;	/*广告容器高度为300px*/
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+#slider {			/*设置商品幻灯广告内容的样式*/
+    position:relative;		/*相对定位*/
+    width: 620px;
+    height: 300px;
+    background:url(../images/loading.gif) no-repeat 50% 50%;	/*背景设置为默认的广告画面加载时的等待图标*/
+}
+#slider img {		/*设置广告图片的样式*/
+    position:absolute;		/*绝对定位*/
+    top:0px;	/*在容器的顶端*/
+    left:0px;	/*在容器的左端*/
+}
+#slider a {		/*设置广告链接的样式*/
+    border:0;		/*无边框*/
+    display:block;	/*块级元素*/
+}
+
+.nivoSlider {
+    position:relative;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+    z-index:60;
+    display:none;
+}
