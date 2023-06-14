@@ -1,0 +1,28 @@
+#main-right{
+    font-size: 12px;
+    color: #999999;
+}
+#main-right > h1{
+    color: black;
+    font-weight: normal;
+}
+
+#main-right h2{
+    color: black;
+    font-weight: normal;
+}
+.ip {
+    width: 310px;
+}
+textarea{
+    width: 310px;
+    height: 250px;
+}
+.bt {
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+#main-right span {
+    color: #0AE5E5;
+}
